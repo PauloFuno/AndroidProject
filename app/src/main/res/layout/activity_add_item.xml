@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:gravity="center"
+    android:layout_height="match_parent"
+    android:background="@color/DodgerBlue">
+
+    <Switch
+        android:background="@drawable/round_button"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:textColor="@color/MidnightBlue"
+        android:id="@+id/switch2"
+        android:textAlignment="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Income / Outcome"
+        android:layout_marginBottom="100dp" />
+
+
+    <EditText
+        android:textColorHint="@color/White"
+        android:id="@+id/item_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Item"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:textColorHint="@color/White"
+        android:id="@+id/price_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Price"
+        android:inputType="textPersonName" />
+
+    <Button
+
+        android:textColor="@color/MidnightBlue"
+        android:layout_marginTop="100dp"
+        android:id="@+id/doneBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:background="@drawable/round_button" />
+
+
+
+
+</LinearLayout>
