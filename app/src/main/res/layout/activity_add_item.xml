@@ -5,12 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#222"
-    android:gravity="center"
+    android:gravity="top"
     android:orientation="vertical">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="60dp"
         android:layout_marginHorizontal="10dp"
         android:layout_marginTop="10dp"
         android:background="#333"
@@ -19,10 +19,12 @@
 
 
         <Button
+            android:id="@+id/income_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/White"
+            android:textColor="@color/colorPrimary"
             android:text="Income"
+            android:background="@color/colorPrimaryDark"
             android:textStyle="bold"/>
 
 
@@ -34,22 +36,58 @@
 
 
         <Button
+            android:id="@+id/outcome_button"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textColor="@color/White"
+            android:textColor="@color/colorPrimary"
+            android:background="@color/colorAccent"
             android:text="Outcome"
             android:textStyle="bold"/>
 
     </LinearLayout>
 
-    <android.support.v4.view.ViewPager
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_margin="10dp"
-        android:background="#333">
+        android:orientation="vertical"
+        android:gravity="center">
+
+        <TextView
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="25dp"
+            android:text="Outcome"/>
 
 
-    </android.support.v4.view.ViewPager>
+        <EditText
+            android:id="@+id/input_item"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:hint=" Item" />
+
+
+        <EditText
+            android:id="@+id/input_price"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/White"
+            android:hint=" Price"
+            android:inputType="number"/>
+
+        <Button
+            android:id="@+id/done_button"
+            android:layout_marginTop="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Done"
+            android:background="@color/colorAccent"
+            android:textColor="@color/colorPrimary"/>
+
+    </LinearLayout>
+
+
 
 
 </LinearLayout>

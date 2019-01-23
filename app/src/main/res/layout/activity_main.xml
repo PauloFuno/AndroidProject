@@ -33,7 +33,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Number"
+                android:text="Income"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
 
@@ -41,7 +41,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/White"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
 
                 android:text="0"/>
 
@@ -66,7 +68,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Number"
+                android:text="Expanses"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
 
@@ -74,7 +76,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/White"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
 
                 android:text="0"/>
 
@@ -99,7 +103,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center"
-                android:text="Number"
+                android:text="Savings"
                 android:textColor="@color/White"
                 android:textStyle="bold" />
 
@@ -107,7 +111,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/White"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
 
                 android:text="0"/>
 
