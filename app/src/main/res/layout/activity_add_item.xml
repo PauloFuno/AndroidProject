@@ -53,6 +53,7 @@
         android:gravity="center">
 
         <TextView
+            android:id="@+id/text_title"
             android:layout_marginBottom="50dp"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -76,14 +77,33 @@
             android:hint=" Price"
             android:inputType="number"/>
 
-        <Button
-            android:id="@+id/done_button"
-            android:layout_marginTop="50dp"
+        <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Done"
-            android:background="@color/colorAccent"
-            android:textColor="@color/colorPrimary"/>
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/cancel_button"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cancel"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"
+                android:layout_marginRight="30dp"/>
+
+            <Button
+                android:id="@+id/done_button"
+                android:layout_marginTop="50dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Done"
+                android:background="@color/colorAccent"
+                android:textColor="@color/colorPrimary"/>
+
+
+        </LinearLayout>
+
 
     </LinearLayout>
 
