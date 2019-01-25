@@ -103,7 +103,7 @@ public class ActivityAdd extends AppCompatActivity {
 
                 toast.show();
 
-                openActivityMain();
+                returnActivityMain();
             }
         });
     }
@@ -115,13 +115,11 @@ public class ActivityAdd extends AppCompatActivity {
 
 
     public void onCancelBtn () {
-        final Intent intent = new Intent(this, MainActivity.class);
         mCancelBtn = (Button) findViewById(R.id.cancel_button);
         mCancelBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                setResult(ActivityAdd.RESULT_OK, intent);
-                finish();
+                returnActivityMain();
             }
         });
     }
@@ -132,9 +130,10 @@ public class ActivityAdd extends AppCompatActivity {
 
 
 
-    public void openActivityMain() {
-        Intent intent = new Intent(this, MainActivity.class);
-        startActivity(intent);
+    public void returnActivityMain() {
+        final Intent intent = new Intent(this, MainActivity.class);
+        setResult(ActivityAdd.RESULT_OK, intent);
+        finish();
     }
 
 
